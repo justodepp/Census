@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Sometimes what looks good in a vertical format
+looks bad in landscape. To make landscape layout
+create a new folder in res called layout-land.
+Then copy the xml layout in that folder and make 
+the changes you want.
+-->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/app_outer_margin" >
+
+    <EditText
+        android:id="@+id/contactNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/component_bottom_margin"
+        android:ems="10"
+        android:hint="@string/contact_name_hint"
+        android:inputType="textCapWords|textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/contactPhoneEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/component_bottom_margin"
+        android:ems="10"
+        android:hint="@string/contact_phone_hint"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/contactStreetEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/component_bottom_margin"
+        android:ems="10"
+        android:hint="@string/contact_street_hint"
+        android:inputType="textCapWords|textPostalAddress" />
+
+    <EditText
+        android:id="@+id/contactCityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/component_bottom_margin"
+        android:ems="10"
+        android:hint="@string/contact_city_hint"
+        android:inputType="textCapWords" />
+    
+    <EditText
+        android:id="@+id/contactBirthdayEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/component_bottom_margin"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/contact_birthday" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/contactedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_contacted_checkbox" />
+
+    </TableRow>
+
+</TableLayout>
